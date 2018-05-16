@@ -14,13 +14,15 @@
   * @type {Object}
   */
  import home from './home';
+ import touch from './touch';
 
  /**
   * View List - gets passed to router for binding.
   * @type {Array}
   */
  const views = {
-   '/': new View(home)
+   '/': new View(home),
+   '/touch': new View(touch)
  };
 
  /**
@@ -28,7 +30,8 @@
   * @type {Object}
   */
  const rules = {
-   '/': {protected: false, restricted: false}
+   '/': {protected: false, restricted: false},
+   '/touch': {protected: false, restricted: false}
  };
 
  /**

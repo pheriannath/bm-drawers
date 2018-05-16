@@ -38,8 +38,12 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.toggleDrawer}>Toggle Drawer</button>
-        <button onClick={this.toggleFullscreen}>Toggle Fullscreen</button>
+        <h1>Button Example</h1>
+        <div className="controls">
+          <a href="#/touch">Go To Touch Demo</a>
+          <button onClick={this.toggleDrawer}>Toggle Drawer</button>
+          <button onClick={this.toggleFullscreen}>Toggle Fullscreen</button>
+        </div>
         <Components.Drawer visible={this.state.visible} fullScreen={this.state.fullScreen}></Components.Drawer>
       </div>
     )

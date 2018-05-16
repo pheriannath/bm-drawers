@@ -13,5 +13,12 @@ body {
 
 * { box-sizing: border-box; }
 
+h1 { float: left; }
+
+.controls {
+  float: right;
+}
+
 // Components
 @import 'components/drawer';
+@import 'components/touch-drawer';

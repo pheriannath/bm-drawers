@@ -7,8 +7,9 @@
  */
 
 import Drawer from './drawer';
+import TouchDrawer from './touchDrawer';
 
 /**
  * Components Export
  */
-export default {Drawer};
+export default {Drawer, TouchDrawer};

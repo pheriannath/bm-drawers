@@ -1,0 +1,30 @@
+.touch-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 296px; //extra width to grab handle
+  height: 100%;
+  will-change: transform;
+  z-index: 20;
+}
+
+.touch-drawer-closed {
+  transform: translateX(-276px);
+  transition: transform 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.touch-drawer-open {
+  pointer-events: auto;
+  width: 100vw;
+  transform: translateX(0px);
+  transition: transform 0.4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.touch-drawer-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: gray;
+  width: 296px;
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.5);
+}
